@@ -113,6 +113,15 @@ services:
       retries: 50
       start_period: 30s
 
+  duckdb:
+    image: duckdb/duckdb:1.4.2
+    volumes:
+      - ./data:/data
+    network_mode: host
+    command: duckdb -ui
+    tty: true
+    stdin_open: true
+
   airflow-apiserver:
     <<: *airflow-common
     command: api-server
