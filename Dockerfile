@@ -5,4 +5,4 @@ USER root
 
 USER airflow
 
-RUN pip install apache-airflow-providers-fab connexion flask-appbuilder flask-session flask-login
+RUN pip install apache-airflow-providers-fab connexion flask-appbuilder flask-session flask-login duckdb apache-airflow-providers-common-sql

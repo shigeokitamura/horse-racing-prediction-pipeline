@@ -2,3 +2,4 @@ airflow.cfg
 /logs/
 .env
 /data/
+__pycache__
